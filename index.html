@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/media.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+      </script>
+      <title>BuhOne</title>
+
+   </head>
+   <body>
+      <page class="page">
+
+         <header class="header">
+            <div class="wrap">
+               <div class="header__inner">
+                  <div class="header__logo">
+                     <a href="#">
+                        <img src="./img/logo.png" alt="Логотип">
+                        <span>BuhOne</span>
+                     </a>
+                  </div>
+                  <div class="menu">
+                     <div class="menu__inner">
+                        <div class="menu__inner-top">
+                           <ul class="menu__item-top">
+                              <li><a href="tel:81112223344"><img src="./img/icons/phone.png" alt="Телефон"> 8 (111) 222-33-44</a></li>
+                              <li><img src="./img/icons/clock.png" alt="clock"><span>Пн-Пт 10.00-18.00</span></li>
+                              <li><img src="./img/icons/mail.png" alt="mail"><span>order@buhone.ru</span></li>
+                              <li><img src="./img/icons/place.png" alt="place"><span>Невский пр. 130</span></li>
+                           </ul>
+                        </div>
+                        <div class="menu">
+                           <div class="menu__inner-bottom">
+                              <ul class="menu__item-bottom">
+                                 <li><a href="#">Главная</a></li>
+                                 <li><a href="#">Услуги</a></li>
+                                 <li><a href="#">Кейсы</a></li>
+                                 <li><a href="#">О компании</a></li>
+                                 <li><a href="#">Контакты</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+            <!-- /*Burger menu -->
+         <div class="header__burger header">
+            <div class="wrap">
+               <div class="container">
+                  <nav>
+                     <div class="header__logo">
+                        <a href="#">
+                           <img src="./img/logo.png" alt="Логотип">
+                           <span>BuhOne</span>
+                        </a>
+                     </div>
+                     <ul class="nav__ul" id="nav__ul">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                     </ul>
+                     <div class="burger">
+                        <span class="burger__line burger__line_1"></span>
+                        <span class="burger__line burger__line_2"></span>
+                        <span class="burger__line burger__line_3"></span>
+                        <span class="burger__line burger__line_4"></span>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+
+
+
+         <content class="content">
+            <section class="content__slider">
+               <div class="wrap">
+                  <div class="slider">
+                     <div class="slider__item">
+                        <span>Бухгалтерские услуги <br> в Санкт-Петербурге</span>
+                        <div class="slider__button btn">Связь с нами</div>
+                     </div>
+                     <div class="slider__item">
+                        <span>Бухгалтерские услуги <br> в Москве</span>
+                        <div class="slider__button btn">Связь с нами</div>
+                     </div>
+                     <div class="slider__item">
+                        <span>Бухгалтерские услуги <br> в Самаре</span>
+                        <div class="slider__button btn">Связь с нами</div>
+                     </div>
+                     <div class="slider__item">
+                        <span>Бухгалтерские услуги <br> в Сочи</span>
+                        <div class="slider__button btn">Связь с нами</div>
+                     </div>
+                  </div>
+                  <div class="modal slider__modal">
+                     <div class="madal__title">Связь с нами</div>
+                     <div class="madal__container">
+                        <form>
+                           <div class="modal__data">
+                              <div class="modal__name">
+                                 <label class="modal__label">Имя</label>
+                                 <input class="modal__input" type="text" placeholder="Иван">
+                              </div>
+                              <div class="modal__surname">
+                                 <label class="modal__label">Фамилия</label>
+                                 <input class="modal__input" type="text" placeholder="Иванов">
+                              </div>
+                           </div>
+                           <label class="modal__label">Сообщение</label>
+                           <textarea class="modal__textarea" cols="20" rows="4" placeholder="Ваше сообщение"></textarea>
+                           <input class="modal__submit" type="submit" value="Отправить сообщение">
+                        </form>
+                     </div>
+                     <div class="madal__close">X</div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="services">
+               <div class="wrap">
+                  <div class="services__inner">
+                     <span>Наши услуги</span>
+                     <h2>Мы специализируемся</h2>
+                     <div class="services__items">
+                        <a href=""><span>Бухгалтерское обслуживание</span></a>
+                        <a href=""><span>Бухгалтерское обслуживание</span></a>
+                        <a href=""><span>Бухгалтерское обслуживание</span></a>
+                        <a href=""><span>Бухгалтерское обслуживание</span></a>
+                        <a href=""><span>Бухгалтерское обслуживание</span></a>
+                        <a href=""><span>Бухгалтерское обслуживание</span></a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="about">
+               <div class="wrap">
+                  <div class="about__inners">
+                     <span>О нас</span>
+                     <div class="about__inner">
+                        <div class="about__inner-left">
+                           <h2>Компания</h2>
+                           <h3>ИвановПром</h3>
+                           <span>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</span>
+                        </div>
+                        <div class="about__inner-right">
+                           <div class="about__inner-right-item">
+                              <p>90</p>
+                              <span>Завершено крупных сделок</span>
+                              <a class="about__link" href="#">Все кейсы</a>
+                           </div>
+                           <div class="about__inner-right-item">
+                              <p>90</p>
+                              <span>Завершено крупных сделок</span>
+                              <a href="#">Все кейсы</a>
+                           </div>
+                           <div class="about__inner-right-item">
+                              <p>90</p>
+                              <span>Завершено крупных сделок</span>
+                              <a href="#">Все кейсы</a>
+                           </div>
+                           <div class="about__inner-right-item">
+                              <p>90</p>
+                              <span>Завершено крупных сделок</span>
+                              <a href="#">Все кейсы</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="gallery">
+               <div class="wrap">
+                  <div class="gallery__inner">
+                     <h2>Фотогалерея</h2>
+                     <div class="gallery__img">
+                        <div class="gallery__img-left">
+                           <img class="lazyload" data-src="./img/gallery_image 1.png" alt="Изображение">
+                           <img class="lazyload" data-src="./img/gallery_image 2.png" alt="Изображение">
+                           <img class="lazyload" data-src="./img/gallery_image 3.png" alt="Изображение">
+                        </div>
+                        <div class="gallery__img-right">
+                           <img class="lazyload" data-src="./img/gallery_image 4.png" alt="Изображение">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal modals">
+                     <div class="madal__container modal__container-img">
+                        <img class="lazyload" data-src="./img/image 1.png" alt="Изображение">
+                        <img class="lazyload" data-src="./img/image 2.png" alt="Изображение">
+                        <img class="lazyload" data-src="./img/image 3.png" alt="Изображение">
+                        <img class="lazyload" data-src="./img/image 4.png" alt="Изображение">
+                     </div>
+                     <div class="madal__close">X</div>
+                  </div>
+                  <div class="madal__bg"></div>
+               </div>
+            </section>
+
+            <section class="questions">
+               <div class="wrap">
+                  <div class="questions__inner">
+                     <h3>faq</h3>
+                     <div class="questions__block">
+                        <div class="questions__block-left">
+                           <h2>Ответы на</h2>
+                           <h3>Вопросы</h3>
+                           <div class="accordion">
+                              <div class="accordion-item">
+                                 <div class="accordion-item__trigger">
+                                    Первый вопрос
+                                 </div>
+                                 <div class="accordion-item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde ducimus ut quos quibusdam fugiat possimus, ipsa cupiditate iure officia! Mollitia, voluptatem! Eligendi, reiciendis magni. Molestiae tempore quam nam ex.
+                                 Voluptas sed quam esse adipisci, officiis laboriosam dolore ipsum totam animi saepe? Aut soluta omnis dicta nemo fugit veniam optio totam vel nostrum? Saepe ipsum, ullam recusandae optio molestiae pariatur.
+                                 Officia, nisi incidunt! Deserunt maiores modi rem aut vel, incidunt amet repudiandae dolor animi dignissimos nihil optio similique ipsum cupiditate repellendus placeat tempora nesciunt mollitia quae adipisci nam. Dolorum, veritatis.
+                                 Porro fugit ea enim, exercitationem corrupti explicabo numquam voluptatum quia dolor sit rem nam veniam quaerat, veritatis odit odio perferendis. Accusantium molestias aliquid facere sed maxime autem dolore culpa voluptate!</div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-item__trigger">
+                                    Второй вопрос
+                                 </div>
+                                 <div class="accordion-item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde ducimus ut quos quibusdam fugiat possimus, ipsa cupiditate iure officia! Mollitia, voluptatem! Eligendi, reiciendis magni. Molestiae tempore quam nam ex.
+                                 Voluptas sed quam esse aam animi saepe? Aut soluta omnis dicta nemo fugit veniam optio totam vel nostrum? Saepe ipsum, ullam recusandae optio molestiae pariatur.
+                                 Officia, nisi incidunt! Deserunt maiores modi rem aut vel, incidunt amet repudiandae dolor animi dignissimos nihil optio similique ipsum cupiditate repellendus placeat tempora nesciunt mollitia quae adipisci nam. Dolorum, veritatis.
+                                 Porro fugit ea enim, exerit rem nam veniam quaerat, veritatis odit odio perferendis. Accusantium molestias aliquid facere sed maxime autem dolore culpa voluptate!</div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-item__trigger">
+                                    Третий вопрос
+                                 </div>
+                                 <div class="accordion-item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde ducimus ut quos quibusdam fugiat possimus, ipsa cupiditate iure officia! Mollitia, voluptatem! Eligendi, reiciendis magni. Molestiae tempore quam nam ex.
+                                 Voluptas sed quam esse adipisci, officiis laboriosam dolore ipsum totam animi saepe? Aut soluta omnpsum cupiditate repellendus placeat tempora nesciunt mollitia quae adipisci nam. Dolorum, veritatis.
+                                 Porro fugit ea enim, exercitationem corrupti explicabo numquam voluptatum quia dolor sit rem nam veniam quaerat, veritatis odit odio perferendis. Accusantium molestias aliquid facere sed maxime autem dolore culpa voluptate!</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="questions__block-right">
+                           <img class="lazyload" data-src="./img/img-faq.svg" alt="Изображение">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </content>
+         
+         <div class="advertising">
+            <div class="wrap">
+               <iframe width="100%" height="315" class="lazyload" data-src="https://www.youtube.com/embed/1nkgun-zniI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+         </div>
+
+         <footer class="footer">
+            <div class="footer__top">
+               <div class="wrap">
+                  <div class="footer__top-inner">
+                     <div class="footer__top-items">
+                        <div class="footer__block-left">
+                           <h2>Связь с нами</h2>
+                           <p>У вас остались вопросы? Напишите нам - мы ответим <br> в ближайшее время!</p>
+                           <div class="footer__block-left-contact">
+                              <a href="tel:71112223344">+7(111) 222-33-44</a>
+                              <span>order@bu-one.ru</span>
+                           </div>
+                        </div>
+                        <div class="footer__block-right">
+                           <form>
+                              <div class="modal__data">
+                                 <div class="modal__name">
+                                    <label class="modal__label footer__label">Имя</label>
+                                    <input class="modal__input footer__input" type="text" placeholder="Иван">
+                                 </div>
+                                 <div class="modal__surname">
+                                    <label class="modal__label footer__label">Фамилия</label>
+                                    <input class="modal__input footer__input" type="text" placeholder="Иванов">
+                                 </div>
+                              </div>
+                              <label class="modal__label label2">Сообщение</label>
+                              <textarea class="modal__textarea footer__textarea" cols="20" rows="4" placeholder="Ваше сообщение"></textarea>
+                              <input class="modal__submit" type="submit" value="Отправить сообщение">
+                           </form>
+                        </div>
+                     </div>
+                     <div id="map" style="width: 100%; height: 310px"></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer__bottom">
+               <div class="wrap">
+                  <div class="footer__bottom-inner">
+                     <span>2019 (с) Все права защищены. БухОне.ру</span>
+                     <span>Разработано: BuhOne</span>
+                  </div>
+               </div>
+            </div>
+         </footer>
+
+      </page>
+      <script src="./js/lazysizes.min.js"></script>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
